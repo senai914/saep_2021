@@ -1,7 +1,7 @@
 /**
  ******************************************************************************
  * @file    main.cpp
- * @author  Professor Kleber Lima da Silva <kleber.lima@sp.senai.br
+ * @author  Professor Kleber Lima da Silva <kleber.lima@sp.senai.br>
  * @version V0.1.0
  * @date    01-Dez-2021
  * @brief   Code for SAEP 2021.
@@ -308,7 +308,7 @@ void vTaskModbusPWM(void *arg)
 
         /* Analog Output - PWM */
 #if ENABLE_PWM == 1
-        PWM_OUTPUT(pwmAO);
+        PWM_OUTPUT(100 - pwmAO);
 #endif
 
         /* Task loop interval */
